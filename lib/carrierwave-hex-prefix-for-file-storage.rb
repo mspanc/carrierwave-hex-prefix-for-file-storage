@@ -3,9 +3,9 @@ module CarrierWave
     module HexPrefixForFileStorage
       def store_dir_with_hex_prefix(root_path = nil)
         if root_path.nil?
-          path = Rails.root.join("public", "system").to_s
+          path = [ Rails.root.join("public", "system").to_s ]
         else
-          path = root_path.to_s
+          path = [ root_path.to_s ]
         end
 
         path << model.class.to_s.underscore
