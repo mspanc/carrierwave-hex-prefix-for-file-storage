@@ -1,4 +1,4 @@
-module Carrierwave
+module CarrierWave
   module Uploader
     module HexPrefixForFileStorage
       def store_dir_with_hex_prefix(root_path = nil)
