@@ -11,7 +11,6 @@ module CarrierWave
         path << model.class.to_s.underscore
         path << mounted_as.to_s
         model.id.to_s(16).split("").each_slice(3) { |x| path << x.join }
-        path << "_"
 
         File.join *path
       end

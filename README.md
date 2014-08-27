@@ -13,11 +13,11 @@ It is due to the fact that some filesystems have limit of subdirectories (for ex
 
 Create directory structure of following syntax:
 
-    (ROOT_PATH)/(model class)/(mounted as)/(record's ID in hex split into groups of 3 characters)/_
+    (ROOT_PATH)/(model class)/(mounted as)/(record's ID in hex split into groups of max 3 characters)/(file name)
 
 For example:
 
-    /home/myrailsapp/public/system/User/Avatar/af7/233/1a3/12/_
+    /home/myrailsapp/public/system/User/Avatar/af7/233/1a3/12/whatever.mp3
 
 
 # Installation
