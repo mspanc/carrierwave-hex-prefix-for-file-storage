@@ -1,6 +1,6 @@
 # Introduction
 
-This is a simple Ryby gem that just enscapsulates directory naming scheme for [carrierwave's](https://github.com/carrierwaveuploader/carrierwave) file storage, enabling creation of directory structure that will be efficient and survive subdirectories limit.
+This is a simple Ruby gem that just enscapsulates directory naming scheme for [carrierwave's](https://github.com/carrierwaveuploader/carrierwave) file storage, enabling creation of directory structure that will be efficient and survive subdirectories limit.
 
 
 ## Problem
@@ -11,7 +11,7 @@ It is due to the fact that some filesystems have limit of subdirectories (for ex
 
 ## Solution
 
-Create directory structure of following syntax:
+Create directory structure of the following syntax:
 
     (ROOT_PATH)/(model class)/(mounted as)/(record's ID in hex split into groups of max 3 characters)/(file name)
 
